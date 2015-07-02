@@ -10,7 +10,7 @@ More info about [Grails](https://grails.org/).
 This image was inspired by the [niaquinto/grails](https://registry.hub.docker.com/u/niaquinto/grails/) image available in the Docker Registry Hub.
 
 ## Technologies / Versions Used
-- Grails 2.5.0 (by default, all versions up to `2.5.0` can be specified) 
+- Grails 2.2.1 (by default, all versions up to `2.5.0` can be specified) 
 - Java JDK 7+ 
 - Tomcat 7+ 
 
