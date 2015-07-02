@@ -3,7 +3,7 @@ MAINTAINER Manuel Ortiz Bey <ortiz.manuel@mozartanalytics.com>
 
 # Set customizable env vars defaults.
 # Set Grails version (max version for this Docker image is: 2.5.0).
-ENV GRAILS_VERSION 2.5.0
+ENV GRAILS_VERSION 2.2.1
 
 # Set phusion/baseimage's correct settings.
 ENV HOME /root
