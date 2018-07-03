@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.9.22
+FROM java:7
 MAINTAINER Manuel Ortiz Bey <ortiz.manuel@mozartanalytics.com>
 
 # Set customizable env vars defaults.
@@ -7,17 +7,6 @@ ENV GRAILS_VERSION 2.5.0
 
 # Set phusion/baseimage's correct settings.
 ENV HOME /root
-
-# Disable phusion/baseimage's ssh server (not necessary for this type of container).
-RUN rm -rf /etc/service/sshd /etc/my_init.d/00_regen_ssh_host_keys.sh
-
-# Download Install Java
-RUN apt-get update
-RUN apt-get install -y openjdk-7-jdk unzip wget
-
-# Setup Java Paths
-ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
-ENV PATH $JAVA_HOME/bin:$PATH
 
 # Install Grails
 WORKDIR /usr/lib/jvm
