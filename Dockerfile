@@ -30,5 +30,5 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 # Set Default Behavior
 # Use phusion/baseimage's init system.
 # See http://phusion.github.io/baseimage-docker/ for more info.
-ENTRYPOINT ["/sbin/my_init", "grails"]
+ENTRYPOINT ["grails"]
 CMD ["prod", "run-war"]
